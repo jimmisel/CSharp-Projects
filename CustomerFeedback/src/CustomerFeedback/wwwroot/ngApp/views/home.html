@@ -1,0 +1,10 @@
+<h2>Home</h2>
+<ul>
+    <li ng-repeat="feed in controller.feedBack">
+        {{feed.userName}}<br />
+        {{feed.comment}}<br />
+        {{feed.createdAt}}<br />
+        <a ui-sref="Edit({id: feed.id})">edit</a>
+        <a ui-sref="Delete({id: feed.id})">delete</a>
+    </li>
+</ul>

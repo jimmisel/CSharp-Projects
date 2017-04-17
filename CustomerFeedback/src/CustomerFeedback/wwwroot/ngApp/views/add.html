@@ -1,0 +1,11 @@
+﻿<form ng-submit="controller.addFeedback()">
+    <div>
+        <label for="Name">Name:</label>
+        <input id="Name" ng-model="controller.feedbackToAdd.userName" />
+    </div>
+    <div>
+        <label for="comment">Comment:</label>
+        <input id="comment" ng-model="controller.feedbackToAdd.comment" />
+    </div>
+    <input type="submit" value="Save" />
+</form>
